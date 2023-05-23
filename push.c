@@ -38,5 +38,5 @@ void push(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 	n = atoi(utls.args[1]);
-	add_dnodeint(stack, n);
+	add_node(stack, n);
 }
