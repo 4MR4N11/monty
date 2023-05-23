@@ -25,7 +25,7 @@ This repository contains the files for the Monty project, which is part of the c
 To use the program, clone this repository into your local repository:
 
 ```bash
-git clone
+git clone https://github.com/4MR4N11/monty.git
 ```
 
 Compile the program using the following command:
