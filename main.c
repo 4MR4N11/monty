@@ -17,6 +17,7 @@ int main(int ac, char **av)
 
 	utls.line_n = 0;
 	utls.args = NULL;
+	utls.queue = 0;
 	if (ac == 2)
 	{
 		utls.file_ptr = fopen(av[1], "r");
