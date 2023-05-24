@@ -20,11 +20,11 @@ void parse_line(char *line, stack_t **stack)
 	};
 	int i = 0;
 
+	utls.line_n++;
 	utls.args[0] = strtok(line, " \n\t");
 	utls.args[1] = strtok(NULL, " \n\t");
 	if (utls.args[0])
 	{
-		utls.line_n++;
 		while (opcodes[i].opcode)
 		{
 			if (strcmp(opcodes[i].opcode, utls.args[0]) == 0)
