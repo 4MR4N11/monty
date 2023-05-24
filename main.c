@@ -35,6 +35,7 @@ int main(int ac, char **av)
 				free_stack(&stack);
 				break;
 			}
+			utls.line_n++;
 			parse_line(line, &stack);
 		}
 		return (EXIT_SUCCESS);
