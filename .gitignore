@@ -1,2 +1,5 @@
 test.m
 monty
+test/
+test/*
+test
