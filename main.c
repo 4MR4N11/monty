@@ -1,7 +1,7 @@
 #include "monty.h"
 
 
-utils_t utls = {NULL, NULL, NULL};
+utils_t utls;
 
 /**
  * main - entry point
