@@ -24,8 +24,7 @@ int main(int ac, char **av)
 			fprintf(stderr, "Error: Can't open file %s\n", av[1]);
 			exit(EXIT_FAILURE);
 		}
-		utls.args = malloc(sizeof(char *) * 3);
-		utls.args[2] = NULL;
+		utls.args = malloc(sizeof(char *) * 2);
 		while (1)
 		{
 			if (fgets(line, BUFFSIZE, utls.file_ptr) == NULL)
