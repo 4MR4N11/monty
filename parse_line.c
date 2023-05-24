@@ -9,18 +9,24 @@
 void parse_line(char *line, stack_t **stack)
 {
 	instruction_t opcodes[] = {
-		{"push", push},
-		{"pall", pall},
-		{"pint", pint},
-		{"pop", pop},
-		{"swap", swap},
-		{"add", add},
-		{"nop", nop},
+		{"push", _push},
+		{"pall", _pall},
+		{"pint", _pint},
+		{"pop", _pop},
+		{"swap", _swap},
+		{"add", _add},
+		{"nop", _nop},
+		{"sub", _sub},
+		{"div", _div},
+		{"mul", _mul},
+		{"mod", _mod},
 		{NULL, NULL}
 	};
 	int i = 0;
 
 	utls.args[0] = strtok(line, " \n\t");
+	if (utls.args[0] && utls.args[0][0] == '#')
+		return;
 	utls.args[1] = strtok(NULL, " \n\t");
 	if (utls.args[0])
 	{
