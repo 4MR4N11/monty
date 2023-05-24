@@ -21,6 +21,8 @@ void parse_line(char *line, stack_t **stack)
 	int i = 0;
 
 	utls.args[0] = strtok(line, " \n\t");
+	if (utls.args[0] && utls.args[0][0] == '#')
+		return;
 	utls.args[1] = strtok(NULL, " \n\t");
 	if (utls.args[0])
 	{
