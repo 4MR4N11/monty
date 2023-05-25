@@ -113,5 +113,3 @@ $ ./monty bytecodes/02.m
 5
 4
 ```
-
-```bash
