@@ -61,3 +61,57 @@ Run the program using the following command:
 | rotr | Rotates the stack to the bottom. |
 | stack | Sets the format of the data to a stack (LIFO). |
 | queue | Sets the format of the data to a queue (FIFO). |
+
+## Examples
+
+```bash
+$ cat bytecodes/00.m
+push 1
+push 2
+push 3
+pall
+$ ./monty bytecodes/00.m
+3
+2
+1
+```
+
+```bash
+$ cat bytecodes/01.m
+push 1
+push 2
+push 3
+pall
+swap
+pall
+$ ./monty bytecodes/01.m
+3
+2
+1
+2
+3
+1
+```
+
+```bash
+$ cat bytecodes/02.m
+stack
+push 1
+push 2
+push 3
+pall
+queue
+push 4
+push 5
+push 6
+pall
+$ ./monty bytecodes/02.m
+3
+2
+1
+6
+5
+4
+```
+
+```bash
